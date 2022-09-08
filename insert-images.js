@@ -9,9 +9,10 @@ $.ajax(settings).done(function (response) {
       var img = document.createElement('img');
       img.src = image.path;
       var span = document.createElement("span");
-      span.className = index;
+      var className = "image-container" + index;
+      span.className = className;
       document.getElementById("images_container").appendChild(span);
-      document.querySelector("#images_container span." + index).appendChild(img);
+      document.querySelector("#images_container span." + className).appendChild(img);
    });
    console.log(response);
 });
