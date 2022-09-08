@@ -10,9 +10,6 @@ $.ajax(settings).done(function (response) {
       img.src = image.path;
       var span = document.createElement("span");
       document.getElementById("images_container").appendChild(span);
-      document.getElementById("images_container").appendChild(span);
-      document.getElementById("images_container").appendChild(span);
-      document.getElementById("images_container").appendChild(span);
       document.getElementById("images_container").appendChild(img);
    });
    console.log(response);
