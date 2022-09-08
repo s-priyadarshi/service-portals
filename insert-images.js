@@ -8,7 +8,7 @@ $.ajax(settings).done(function (response) {
    response.forEach(function (image) {
       var img = document.createElement('img');
       img.src = image.path;
-      document.getElementById("images.container").appendChild(img);
+      document.getElementById("images_container").appendChild(img);
    });
    console.log(response);
 });
