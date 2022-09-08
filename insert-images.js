@@ -8,6 +8,11 @@ $.ajax(settings).done(function (response) {
    response.forEach(function (image) {
       var img = document.createElement('img');
       img.src = image.path;
+      var span = document.createElement("span");
+      document.getElementById("images_container").appendChild(span);
+      document.getElementById("images_container").appendChild(span);
+      document.getElementById("images_container").appendChild(span);
+      document.getElementById("images_container").appendChild(span);
       document.getElementById("images_container").appendChild(img);
    });
    console.log(response);
