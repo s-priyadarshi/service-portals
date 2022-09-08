@@ -1,31 +1,11 @@
-ul.ins-imgs {
-    list-style-type: none;
-    padding: 0;
+body {
+text-align: center;
+background-image: url("background.png");
+background-size: cover;
 }
-
-li.ins-imgs-li {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-div.ins-imgs-img img {
-    max-width: 900px;
-    outline: none;
-    -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
-    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
-}
-
-div.ins-imgs-img.zoom img {
-    max-width: 100%;
-}
-
-div.ins-imgs-label {
-    padding-top: 5px;
-    font: 9px sans-serif;
-}
-
-div.ins-imgs-img a:focus {
-    outline: none;
+.images-container img {
+margin: 16px;
+border: 8px solid;
+box-shadow: 0 0 6px 0px grey;
+border-image: linear-gradient(45deg, turquoise, #fff) 1;
 }
