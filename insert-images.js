@@ -5,12 +5,13 @@ var settings = {
 };
 
 $.ajax(settings).done(function (response) {
-   response.forEach(function (image) {
+   response.forEach(function (image, index) {
       var img = document.createElement('img');
       img.src = image.path;
       var span = document.createElement("span");
+      span.className = index;
       document.getElementById("images_container").appendChild(span);
-      document.getElementById("images_container").appendChild(img);
+      document.querySelector("#images_container span." + index).appendChild(img);
    });
    console.log(response);
 });
