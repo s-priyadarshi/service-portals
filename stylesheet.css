@@ -1,13 +1,49 @@
 body {
-text-align: center;
-background-image: url("background.png");
-background-size: cover;
+    text-align: center;
+    background-image: url("background.png");
+    background-size: cover;
 }
+
 #images_container img {
-margin: 16px;
-border: 8px solid;
-box-shadow: 0 0 6px 0px grey;
-border-image: linear-gradient(45deg, turquoise, #fff) 1;
-width:  70%;
-object-fit: cover;
+    border: 16px solid #fff;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+span {
+    --borderWidth: 8px;
+    background: #1D1F20;
+    position: relative;
+    display: inline-block;
+    margin: 16px;
+}
+
+span:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100 % + var(--borderWidth) * 2);
+    width: calc(100 % + var(--borderWidth) * 2);
+    background: linear - gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    z - index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background - size: 300 % 300 %;
+}
+
+
+@keyframes animatedgradient {
+    0 % {
+        background- position: 0 % 50 %;
+    }
+
+    50 % {
+        background- position: 100 % 50 %;
+    }
+
+    100 % {
+        background- position: 0 % 50 %;
+    }
 }
