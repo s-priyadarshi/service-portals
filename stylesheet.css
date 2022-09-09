@@ -5,30 +5,31 @@ body {
 }
 
 #images_container img {
-    border: 16px solid #fff;
+    border: 8px solid #fff;
     margin: 0;
     padding: 0;
     object-fit: cover;
     vertical-align: middle;
+    width: calc(100% - 16px);
 }
 
-
-span {
-  --borderWidth: 8px;
+#images_container span {
+  --borderWidth: 1px;
   background: #1D1F20;
   position: relative;
-    display: inline-block;
-    margin: 16px;
-
+  display: inline-block;
+  margin: 16px;
+  width: 75%;
 }
-span:after {
+
+#images_container span:after {
   content: '';
   position: absolute;
   top: calc(-1 * var(--borderWidth));
   left: calc(-1 * var(--borderWidth));
   height: calc(100% + var(--borderWidth) * 2);
   width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  background: linear-gradient(60deg, #000, #000, #fff, #fff, #000, #000, #fff, #fff);
   z-index: -1;
   animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
