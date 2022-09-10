@@ -8,6 +8,7 @@ $.ajax(settings).done(function (response) {
    response.forEach(function (image, index) {
       var img = document.createElement('img');
       img.src = image.path;
+      img.alt = image.name;
       var span = document.createElement("span");
       var className = "image-container" + index;
       span.className = className;
