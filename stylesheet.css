@@ -47,7 +47,7 @@ body {
   padding: 0;
   object-fit: cover;
   vertical-align: middle;
-  width: 100%;
+  width: calc(100% - 16px);
 }
 
 #images_container span {
